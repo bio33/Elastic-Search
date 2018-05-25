@@ -6,8 +6,8 @@ CSCI 5408 : assignment 1 : Compare Relational DB against Elastic Search
 Run the following commands to run the search query on Insomnia(REST client):
 
 Query 1: Find all buses for a particular Bus Stop
-LINK :Get ec2-18-216-144-223.us-east-2.compute.amazonaws.com:9200/stops/_search
-BODY : 
+1.LINK :Get ec2-18-216-144-223.us-east-2.compute.amazonaws.com:9200/stops/_search
+2.BODY : 
 {
 "query": {
 "has_child" : {
@@ -22,8 +22,8 @@ BODY :
 }
 
 # Query 2 Find buses between two time ranges
-Link : Get ec2-18-216-144-223.us-east-2.compute.amazonaws.com:9200/stops/_search
-Body : 
+1.Link : Get ec2-18-216-144-223.us-east-2.compute.amazonaws.com:9200/stops/_search
+2.Body : 
 {
 "query":
 {
@@ -47,8 +47,8 @@ Body :
 }
 
 # Query 3 : Find route information of a particular bus on a particular route
-Link : Get ec2-18-216-144-223.us-east-2.compute.amazonaws.com:9200/stops/_search
-Body :
+1.Link : Get ec2-18-216-144-223.us-east-2.compute.amazonaws.com:9200/stops/_search
+2.Body :
 {
 "query":
 {
@@ -70,8 +70,8 @@ Body :
 }
 }
 # Query 4 Find top 3 bus stops that are the busiest throughout the day in terms of bus routes. (Hint: The bus stops with high volume of bus routes and close time gaps would be considered as busiest).
-Link : Get ec2-18-216-144-223.us-east-2.compute.amazonaws.com:9200/stops/_search
-Body :
+1.Link : Get ec2-18-216-144-223.us-east-2.compute.amazonaws.com:9200/stops/_search
+2.Body :
 {
 "size": 0,
 "aggs": {
